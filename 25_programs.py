@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
 
 # 1. Extend the rectangular_basic.py from above to print both the area and the circumference of
 # the rectangle.
