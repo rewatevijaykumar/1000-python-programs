@@ -70,3 +70,19 @@ def main():
     return res
 main()
 
+# 6. Create a script to calculate area of rectangle that will accept the arguments 
+# on the command line like this: python rect.py 2 4
+
+import sys
+def main():
+    if len(sys.argv) != 3:
+        print('need 2 arguments - length and width')
+    
+    width = int(sys.argv[1])
+    length = int(sys.argv[2])
+    
+    if width <= 0 or length <=0:
+        print('Enter positive value')
+    area = length * width
+    print(area)
+main()
