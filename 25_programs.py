@@ -41,7 +41,7 @@ def main():
     a = int(input('side a:'))
     b = int(input('side b:'))
     
-    if a < 0 or b < 0:
+    if a <= 0 or b <= 0:
         print('please enter positive number')
         return
             
@@ -52,3 +52,21 @@ main()
 
 # 5. Create a script that accepts 2 numbers and an operator (+, -, *, /), and prints the result of the
 # operation.
+def main():
+    a = int(input('Enter first number : '))
+    b = int(input('Enter second number : '))
+    operator = input('Enter Operator +,-,/,* :')
+    
+    if operator=='+':
+        res = a+b
+    elif operator == '-':
+        res = a-b
+    elif operator == '*':
+        res = a*b
+    elif operator == '/':
+        res = a/b
+    else:
+        return print('Invalid Choice')
+    return res
+main()
+
